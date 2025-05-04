@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { Suspense } from 'react';
+import Catagories from './Catagories';
 
 const Leftaside = () => {
     return (
         <div>
-            leftside
+          <Suspense fallback ={<span className="loading loading-bars loading-lg"></span>}>
+          <Catagories></Catagories>
+          </Suspense>
         </div>
     );
 };

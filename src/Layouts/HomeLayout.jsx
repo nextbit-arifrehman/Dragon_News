@@ -17,19 +17,21 @@ const HomeLayout = () => {
                     <Navbar></Navbar>
                 </nav>
             </header>
-            <main>
-              <aside>
+
+            <main className='w-11/12 mx-auto  my-3  grid grid-cols-12 '>
+              <aside className='col-span-3 '>
                 <Leftaside></Leftaside>
               </aside>
 
-                 <section className='main'>
+                 <section className='main col-span-6 '>
                    <Outlet></Outlet>
                  </section>
 
-                 <aside>
+                 <aside className='col-span-3'>
                  <Rightaside></Rightaside>
               </aside>
             </main>
+
         </div>
     );
 };
