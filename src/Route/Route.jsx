@@ -16,7 +16,9 @@ const router =createBrowserRouter([
             },
             {
                 path:'/catagory/:id',
-                Component: CatagoryNews
+                Component: CatagoryNews ,
+                loader: () => fetch('/news.json'),
+                hydrateFallbackElement: <span className="loading loading-bars loading-lg"></span>
             }
         ]
     },

@@ -4,7 +4,7 @@ import { NavLink } from 'react-router';
 
 const categoriesPromise = fetch('/categories.json').then((res) =>
     res.json());
-console.log(categoriesPromise)
+
 
 const Catagories = () => {
 
